@@ -7,34 +7,13 @@ if [ ! -f $ANTIGEN ]; then
 fi
 
 source ~/.config/zsh/antigen.zsh
+source ~/.config/zsh/defaults
 source ~/.config/zsh/alias
 source ~/.config/zsh/functions
-
-# History settings
-export HISTFILE=~/.config/zsh/history
-export HISTSIZE=10000
-export SAVEHIST=10000
-setopt INC_APPEND_HISTORY
-setopt HIST_IGNORE_DUPS      
-setopt AUTO_PUSHD
-setopt PUSHD_IGNORE_DUPS
-
-# Appearances
-
-PS1='%B%F{36}ƛ%b %F{blue}%2~ %F{36}» %F{15}%f'
-
-# WSL (aka Bash for Windows) doesn't work well with BG_NICE
-[ -d "/mnt/c" ] && [[ "$(uname -a)" == *Microsoft* ]] && unsetopt BG_NICE
-
-# Enable 256 color to make auto-suggestions look nice
-export TERM="xterm-256color"
 
 # Plugins
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle jeffreytse/zsh-vi-mode
+antigen bundle skywind3000/z.lua
 
-
-# Keymaps
-
-# Tools
