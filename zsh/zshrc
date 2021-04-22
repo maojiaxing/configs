@@ -6,8 +6,9 @@ if [ ! -f $ANTIGEN ]; then
 	curl -L "http://git.io/antigen" -o antigen.zsh
 fi
 
-source antigen.zsh
-source funcation.zsh
+source ~/.config/zsh/antigen.zsh
+source ~/.config/zsh/alias
+source ~/.config/zsh/functions
 
 # History settings
 export HISTFILE=~/.config/zsh/history
@@ -29,9 +30,9 @@ PS1='%B%F{36}ƛ%b %F{blue}%2~ %F{36}» %F{15}%f'
 export TERM="xterm-256color"
 
 # Plugins
-
-# highlighting
-antigen bundle zdharma/fast-syntax-highlighting
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle jeffreytse/zsh-vi-mode
 
 
 # Keymaps
