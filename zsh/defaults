@@ -1,4 +1,4 @@
-export _ZL_DATA=~/.config/zlua
+export _ZL_DATA=~/.config/zlua/data
 export HISTCONTROL=ignoreboth
 export HISTFILE=~/.config/zsh/history
 export HISTSIZE=10000
