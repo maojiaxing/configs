@@ -1,0 +1,19 @@
+alias cls='clear'
+
+alias ll='ls -l -G' 
+
+alias la='ls -a'
+
+alias grep='grep --color=auto'
+
+alias SimpleServer='open http://localhost:8000; python -m SimpleHTTPServer'
+
+alias ..=' cd ..; ls'
+
+alias ...=' cd ..; cd ..; ls'
+
+alias ....=' cd ..; cd ..; cd ..; ls'
+
+alias sourcetree='open -a SourceTree'
+
+alias mvn='mvn -s ~/.config/maven/settings.xml'
